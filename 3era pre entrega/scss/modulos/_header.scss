@@ -1,0 +1,19 @@
+ @import "./variables";
+
+
+header {
+
+ img{
+   width: $logo-header-l;
+   height: $logo-header-a;
+   
+ }
+}
+
+ nav{ 
+    margin: $nav-header;
+ }
+ a{
+    margin: $nav-header-a;
+
+ }
