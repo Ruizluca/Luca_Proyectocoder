@@ -4,213 +4,172 @@
 @import "./modulos/footer";
 @import "./modulos/variables"; 
 
-// @media  screen and (min-width: 768px) {
-//     header {
+@media (max-width: 1024px) {
 
-//         img{
-//           width: 83vh;
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-//         }
-//     }
-//     @for $i from 1 through 4 {
-
-//         #promo#{$i} {
-//             width: 150px;
-//             color: map-get($paleta_colores, "blanco" );
-//             background-color: map-get($paleta_colores, "azul-oscuro" );
-//             margin: 50px;
-//             padding: 20px;
-//             flex-direction: column;
-//         }   
-// }
-
-
-// @media  screen and (min-width: 992px) {
-//     header {
-
-//         img{
-//           width: 108vh;
-
-//         }
-//     }
-// }
-
-// @media  screen and (min-width: 1200px){
-//     header {
-
-//         img{
-//           width: 130vh;
-//           display: flex;
+    header {
+        img{
+          width: 197vh;
           
-//         }
-//     }
-// }
+        }
+       }
+       nav{ 
+        margin: 10px;
+     }
+     a{
+        margin: 5px;
+     }
+     .infouno{ 
+        display:flex;
 
-
-// @media  screen and (min-width: 1444px) {
-//     header {
-
-//         img{
-//           width: $logo-header-l;
-//           height: $logo-header-a;
-          
-//         }
-//        }
+     }
        
+}
 
-//         nav{ 
-//            margin: 10px;
-//         }
-//         a{
-//            margin: 5px;
-       
-//         }
-    
-        
-// //main index //
+@media (max-width: 768px) {
+    header {
+        img{
+          width: 147vh;
+        }
+       }
+       @for $i from 1 through 4 {
 
-// .infouno{
-//     @include flex ( center,center);
-//     justify-items: center;
-//     flex-direction: column;
-//     flex-basis: 50%;
-//     font-weight: bold;}
+        #promo#{$i} {
 
-// // main contacto //
+            margin: 23px;
+            gap: 1rem;
+        }   
+}
+}
 
-// #maincontacto{
-//     height: 45%;
+@media (max-width: 600px) {
+    header {
+        img{
+          width: 115vh;
+        }
+       }
+       .tarjetasplanes{
+        @include flexbox(center,center);
+        margin: 10px;
+        gap: 1rem;
 
-// }
-// .bodycontacto{
-//     @include flexbox(center,center);
-//     padding: 10px;
-//     font-size: 50px;
-// }
+        h5{
+            font-size: 20px;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
-// .contacto-formulario {
-//     padding: 10px 20px;
-//     display: flex;
-//     flex-direction: column;
-//     background-color: map-get($paleta_colores, "celeste" );
-//     border-radius: 30px;
-//     margin: 0 25px 15px 25px;
-//   }
-//   .contacto-label {
-//     margin-top: 15px;
-//     color: map-get($paleta_colores, "blanco");
-//     font-weight: bold;
-//   }
-//   .contacto-input {
-//     border: none;
-//     border-radius: 20px;
-//     padding: 8px;
-//     background-color: map-get($paleta_colores, "blanco" );
-//     border-color: map-get($paleta_colores, "blanco" );
-//   }
-//   .contacto-mensaje {
-//     border: none;
-//     border-radius: 20px;
-//     padding: 8px;
-//     height: 150px;
-//     background-color: map-get($paleta_colores, "blanco" );
-//     border-color: map-get($paleta_colores, "blanco" );
-//   }
-//   .contacto-enviar {
-//     background-color: map-get($paleta_colores, "negro" );
-//     color: map-get($paleta_colores, "blanco" );
-//     border: none;
-//     border-radius: 15px;
-//     width: 80px;
-//     padding: 8px;
-//     transition: background-color 0.5s;
-//   }
+       @for $i from 1 through 4 {
 
-//   //main planes//
+        #promo#{$i} {
 
-//   .titulopromoclientes{
-//     display: flex;
-// flex-direction: row;
-// flex-wrap: nowrap;
-// justify-content: space-evenly;
-// font-size: 4rem;
-// }
+            margin: 2px;
+            gap: 1rem;
+        }   
+        .titulopromoclientes{
+            font-size: 40px;
+        }
+}
+}
 
-// .tarjetasplanes{
-//     @include flexbox(center,center);
-//     margin: 40px;
-//     gap: 2rem;
-//     div{
-//         font-weight: bold;
-//         color:map-get($paleta_colores, "negro" );
-//     }
-//     h5{
-//         font-size: 30px;
-//         color: map-get($paleta_colores, "azul" );
-//     }
-// }
+@media (max-width: 480px) {
+    header {
+        img{
+          width: 90vh;
+          height: 35vh
+        }
+       }
+       .tarjetasplanes{
+        @include flexbox(center,center);
+        margin: 5px;
+        gap: 1rem;
 
-// //main  Promo //
+        h5{
+            font-size: 15px;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+    }
 
-// @for $i from 1 through 4 {
+       @for $i from 1 through 4 {
 
-//     #promo#{$i} {
-//         width: 150px;
-//         color: map-get($paleta_colores, "blanco" );
-//         background-color: map-get($paleta_colores, "azul-oscuro" );
-//         margin: 50px;
-//         padding: 20px;
-//         border: 1px solid black;
-//         gap: 2rem;
-//         justify-content: center;
-//         align-items: center;
-//     }   
-// }
+        #promo#{$i} {
+            margin: 2px;
+            gap: 1rem;
+        }   
+        .boxmain{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items:center;
+        }
+}
+}
 
-//         .boxmain{
-//             display: grid;
-//             grid-template-rows: 1fr;
-//             grid-template-columns: 1fr 1fr 1fr 1fr;
-//             justify-content: center;
-//             align-items:center;
-//         }
-//         footer{
-//             display: flex;
-//             flex-direction: row;
-//             flex-wrap: nowrap;
-//             justify-content: right;
-//             align-items: center;
-//             border-top: 3px solid black;
-        
-//         ul li a{
-//                 font-size: 1rem;
-//                 color: blue;
-//             }
-//             }
-        
-        
-//             #caja{
-//                 position: fixed;
-//                 right: 0%;
-//                 top: 400px;
-//             }
-            
-//             #cajados img{
-//                 width: 100px;
-//                 height: 100px;
-//             }
-        
-//             #cajacuatro img{
-//                 width: 100px;
-//                 height: 100px;
-//                 margin-left: 12px;
-//                 margin-top: 20px;
-//             }
-        
-//             .terminosycondiciones{
-//                 margin-top: 40px;
-//             }
+@media (max-width: 320px) {
+    header {
+        img{
+          width: 60vh;
+        }
+       }
+       .tarjetasplanes{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-area: auto;
+        h5{
+            font-size: 11px;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+    }
 
-//        }
-//     }
+       @for $i from 1 through 4 {
+
+        #promo#{$i} {
+            margin: 2px;
+            gap: 1rem;
+        }   
+        .boxmain{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr ;
+            justify-content: center;
+            align-items:center;
+        }
+}
+.titulopromoclientes{
+    font-size: 30px;
+}
+
+    #cajados img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #cajacuatro img{
+        width: 60px;
+        height: 60px;
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+
+    }
 
